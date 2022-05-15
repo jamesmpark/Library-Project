@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="/script.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="nav">
+        <h1>Library Project</h1>
+      </nav>
+    </header>
+
+    <!-- Add New Book Button -->
+    <div class="btn-container">
+      <button class="btn-show-modal" id="addBookBtn">+ Add a book</button>
+    </div>
+
+    <!-- Book Cards -->
+    <div class="grid-container">
+      <div class="grid">
+        <!-- Placeholders -->
+        <!-- <div class="book-card">
+          <p class="title">Stoner</p>
+          <p class="author">by John Williams</p>
+          <p class="pages">250 pages</p>
+          <div class="btn-group">
+            <button class="btn readBtn btn-light-green">Read</button>
+            <button class="btn remove">Remove</button>
+          </div>
+        </div> -->
+
+        <!-- Placeholders -->
+        <!-- <div class="book-card">
+          <p class="title">Attack on Titan Omnibus 7-9</p>
+          <p class="author">by Hajime Isayama</p>
+          <p class="pages">600 pages</p>
+          <button class="btn unreadBtn btn-light-red">Unread</button>
+          <button class="btn remove">Remove</button>
+        </div> -->
+      </div>
+
+      <!-- Modal Form -->
+      <div class="modal hidden">
+        <button class="btn-close-modal">&times;</button>
+        <h2 class="modal_header">Add a new book</h2>
+        <!-- Input User Data Form -->
+        <form class="modal_form" id="addBookForm">
+          <label>Title</label>
+          <input type="text" id="title" name="title" placeholder="Title" />
+          <label>Author</label>
+          <input type="text" id="author" name="author" placeholder="Author" />
+          <label>Pages</label>
+          <input
+            type="text"
+            id="numPages"
+            name="numPages"
+            placeholder="Pages"
+          />
+          <label class="read-status">Have you read it?</label>
+          <input class="checkbox" type="checkbox" id="read" name="read" />
+
+          <button class="btn" type="button" form="form" id="addBtn">
+            Submit
+          </button>
+        </form>
+      </div>
+      <!-- Overlay -->
+      <div class="overlay hidden"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="footer_link">
+        <li class="footer_item">Created by James Park</li>
+      </ul>
+    </footer>
+  </body>
+</html>
